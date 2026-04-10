@@ -31,6 +31,4 @@
 
 ## 主动自审
 
-- 这段是否保留了原始意图
-- 这段是否过拟合 JD
-- 这段是否仍然像产品经理简历
+按 [references/self-review.md](../references/self-review.md) 完整执行一轮，确认无触发回改信号后再交付。

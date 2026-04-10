@@ -49,26 +49,15 @@
 
 ## 仓库扫描流程
 
-### 第一步：先跑扫描脚本
+### 第一步：过滤噪声
 
-```bash
-python3 scripts/scan_repo_context.py /path/to/repo
-```
+主动忽略以下内容，不要花时间在这些文件上：
 
-如果 `JD` 或 `原简历` 文件恰好也放在这个仓库里，扫描时要显式排除：
-
-```bash
-python3 scripts/scan_repo_context.py /path/to/repo \
-  --exclude /path/to/jd.md \
-  --exclude /path/to/resume.md
-```
-
-脚本会输出：
-
-- 高优先级文档
-- 入口文件和 manifest
-- 值得优先阅读的代码目录和文件
-- 建议阅读顺序
+- 构建产物和依赖目录：`node_modules/`、`dist/`、`build/`、`vendor/`、`.next/`、`__pycache__/` 等
+- 版本控制和 IDE 目录：`.git/`、`.vscode/`、`.idea/` 等
+- 锁文件：`pnpm-lock.yaml`、`yarn.lock`、`package-lock.json`
+- 测试快照、日志、临时文件
+- 如果 JD 或原简历文件也放在仓库里，同样排除，避免污染项目上下文
 
 ### 第二步：优先读文档类材料
 
