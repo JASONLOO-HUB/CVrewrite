@@ -1,6 +1,6 @@
 ---
 name: pm-project-resume
-description: Use when turning a target JD, an existing product manager resume, and a project code repository into a PM-style project-experience entry grounded in repository context and original product intent, especially when source materials risk sounding too technical or overfit to the JD
+description: Use when turning a target JD, an existing product manager resume, and a project code repository into a PM-style project-experience entry grounded in repository context and original product intent, especially when source materials risk sounding too technical or when aligning to the JD would distort the project's narrative
 type: workflow
 ---
 
@@ -46,7 +46,7 @@ type: workflow
 
 - 用户要基于一个真实代码仓库，生成或修改产品经理简历里的 `项目经历`
 - 输入通常同时包含 JD、原简历、项目仓库
-- 用户希望内容贴合岗位，但不想过拟合 JD
+- 用户希望内容贴合岗位，但不想为了贴 JD 而把项目改得面目全非
 - 项目材料里可能有 PRD / 设计文档 / 计划，也可能只有代码仓库
 
 不要用于：
@@ -75,7 +75,7 @@ type: workflow
 ## 资源导航
 
 - 仓库扫描与上下文优先级：读 [references/context-priority.md](references/context-priority.md)
-- 贴 JD 但不过拟合：读 [references/jd-selection.md](references/jd-selection.md)
+- 适度贴 JD、避免过度对齐：读 [references/jd-selection.md](references/jd-selection.md)
 - 技术材料改写成产品经理语言：读 [references/pm-language.md](references/pm-language.md)
 - 用 STAR + 产品业务周期写”原始意图提炼”：读 [references/star-pm-lifecycle.md](references/star-pm-lifecycle.md)
 - 判断是否必须向用户澄清：读 [references/clarification-threshold.md](references/clarification-threshold.md)
@@ -199,7 +199,7 @@ type: workflow
 
 如果 JD 与项目原始意图发生张力，优先保留项目原始意图，只做有限度包装。
 
-### 不要为了对齐 JD 过拟合改写
+### 不要为了对齐 JD 而堆砌关键词、扭曲主线
 
 目标是“匹配”，不是“覆盖率”。
 

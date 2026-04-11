@@ -1,4 +1,4 @@
 interface:
   display_name: "产品项目经历生成"
-  short_description: "基于JD、原简历和代码仓库生成不过拟合的产品经理项目经历"
+  short_description: "基于 JD、原简历和代码仓库生成贴岗且不失真的产品经理项目经历"
   default_prompt: "Use $pm-project-resume to turn this JD, resume, and project repository into a PM-style project-experience entry."
