@@ -1,5 +1,5 @@
 ---
-name: pm-project-resume
+name: CVrewrite
 description: Use when turning a target JD, an existing product manager resume, and a project code repository into a PM-style project-experience entry grounded in repository context and original product intent, especially when source materials risk sounding too technical or when aligning to the JD would distort the project's narrative
 type: workflow
 ---

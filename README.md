@@ -1,4 +1,4 @@
-# pm-project-resume
+# CVrewrite
 
 一个面向产品经理简历场景的 Skill：  
 把 **目标 JD + 原始简历 + 项目代码仓库** 转成一段**贴岗、自然**，而不是照抄 JD 关键词的项目经历。
@@ -17,7 +17,7 @@
 1. 只盯着 JD 写，导致项目原本的产品意图被打乱，最后变成四不像
 2. 只盯着代码和实现写，导致成品太技术、太像开发说明，不像产品经理简历
 
-`pm-project-resume` 的处理顺序是反过来的：
+`CVrewrite` 的处理顺序是反过来的：
 
 1. 优先读取 PRD、设计文档、计划文档等材料，提炼项目原始意图
 2. 如果这些材料不完整，就以代码仓库为主要上下文补足理解
@@ -150,7 +150,7 @@ python3 scripts/scan_repo_context.py /path/to/repo \
 ## 目录结构
 
 ```text
-pm-project-resume/
+CVrewrite/
 ├── LICENSE
 ├── SKILL.md
 ├── README.md
@@ -177,13 +177,13 @@ pm-project-resume/
 一个典型的请求会像这样：
 
 ```text
-Use $pm-project-resume to turn this JD, my current resume, and my project repository into a PM-style project experience entry.
+Use $CVrewrite to turn this JD, my current resume, and my project repository into a PM-style project experience entry.
 ```
 
 或者中文：
 
 ```text
-用 $pm-project-resume，基于这个 JD、我的原简历和项目代码仓库，生成一段产品经理简历里的项目经历。
+用 $CVrewrite，基于这个 JD、我的原简历和项目代码仓库，生成一段产品经理简历里的项目经历。
 ```
 
 ## 它和普通简历润色工具有什么不同
@@ -211,4 +211,4 @@ Use $pm-project-resume to turn this JD, my current resume, and my project reposi
 
 ## License
 
-本项目采用 [MIT License](LICENSE) 发布。
+本项目采用 [MIT License](CVrewrite/LICENSE) 发布。
